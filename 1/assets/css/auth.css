@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body.login-page{
+
+    background:linear-gradient(135deg,#7C3AED,#9333EA);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.login-card{
+
+    width:420px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.login-card h2{
+
+    text-align:center;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#7C3AED;
+
+}
+
+.login-card p{
+
+    text-align:center;
+
+    color:#777;
+
+    margin:10px 0 30px;
+
+}
+
+.form-control{
+
+    height:55px;
+
+    border-radius:14px;
+
+    border:1px solid #ddd;
+
+}
+
+.form-control:focus{
+
+    border-color:#7C3AED;
+
+    box-shadow:0 0 0 .2rem rgba(124,58,237,.2);
+
+}
+
+.btn-login{
+
+    height:55px;
+
+    background:#7C3AED;
+
+    color:white;
+
+    border:none;
+
+    border-radius:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-login:hover{
+
+    background:#6D28D9;
+
+    color:white;
+
+    transform:translateY(-2px);
+
+}
+
+.login-card a{
+
+    text-decoration:none;
+
+    color:#7C3AED;
+
+    font-weight:600;
+
+}
+
+.login-card a:hover{
+
+    text-decoration:underline;
+
+}
